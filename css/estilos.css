@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*HEADER*/
+
+.logo{
+     max-width: 150px;
+    height: auto 
+}
+
+
+.cabecera h1{
+     font-size: 60px;
+     
+ }
+.menu{
+     display: flex;
+     justify-content: center;
+     background-color: #F55E6B;
+}
+
+.menu a{
+     color: white;
+     padding: 15px 20px;
+     text-decoration: none;
+     text-align: center;
+}
+
+/*MAIN*/
+
+.mainPic{
+     width: 800px;
+     height: auto;
+     display: block;
+    align-items: center; 
+    margin-top: 50px;    
+}
+
+.contenedor1{
+     display: flex;
+     flex-wrap: wrap;     
+}
+
+.main{
+     flex: 70%;
+
+}
+.aside{
+     flex: 30%;
+     background-color: #f1faee;
+     opacity: 0.8;
+     padding: 20px;
+     float: right;
+     width: 300px;
+     margin-top: 40px;
+     margin-bottom: 20px;
+     border: solid 1px #457b9d;   
+     box-shadow: 2px 2px 5px #457b9d;
+     box-sizing: border-box; 
+     padding: 30px;   
+}
+
+.aside h3{
+     font-size: 20px;
+     color: white;
+     background-color: #1d3557;
+     text-align: center;
+     padding: 5px;
+}
+.widget{
+     margin-bottom: 20px;
+}
+
+.news{
+     display: grid;
+     grid-template-columns: repeat(3, 400px);
+     grid-template-rows: repeat(2,350px);
+     gap: 20px;
+     grid-template-areas: 
+     "imagen1  imagen2  imagen3 "
+     "imagen4  imagen5  imagen6 ";
+     justify-content: space-around;
+     background-color: #1d3557;
+     padding: 20px;  
+}
+.imagen1{
+     grid-area: imagen1;
+     background-image: url(../multimedia/johnwick4.png);
+     background-position: center;
+}
+
+.imagen2{
+     grid-area: imagen2;
+     background-image: url(../multimedia/creed3.jpg);
+     background-position: center;
+}
+.imagen3{
+     grid-area: imagen3;
+     background-image: url(../multimedia/antman.jpg);
+     background-position: center;
+}
+.imagen4{
+     grid-area: imagen4;
+     background-image: url(../multimedia/Knights-of-the-Zodiac.jpg);
+     background-position: center;
+}
+.imagen5{
+     grid-area: imagen5;
+     background-image: url(../multimedia/theflash.jpg);
+     background-position: center;
+}
+.imagen6{
+     grid-area: imagen6;
+     background-image: url(../multimedia/shazam-2.jpg);
+     background-position: center;
+}
+.soundtrack{
+     grid-area: soundtrack;
+}
+.footer{
+     grid-area: footer;
+     display: block inline-block;
+}
+.bajadaPrincipal{
+color:#f1faee ;
+text-align: justify;
+background-color: #457b9d;
+height: 150px;
+padding: 10px;
+overflow: auto;
+}
+
+.button{
+     font-weight: bold;
+     color: #1d3557;
+     background-color: #f1faee;
+     margin: 10px;
+     padding: 20px; 
+}
+
+.movieTrailer{
+     padding: 20px;
+}
+
+.nosotrosTexto{
+    text-align: justify;
+    background-color: #457b9d;
+    color: #f1faee;
+    display: flex;
+}
+
+/*NOSOTROS*/
+
+.nosotrosImagen{
+
+     padding: 0px;
+}
+
+.equipo{
+      width: 200px;
+     display: inline;
+     padding: 10px;
+
+}
+
+.nosotrosTexto{
+     text-align: center;
+}
+
+
+/*CONTACTO*/
+
+.form{
+     background-color: #457b9d;
+     color: #f1faee;
+}
+
+
+/*GENERAL*/
+
+h2{
+     text-align: left;
+     color: black; 
+     margin-top: 20px; 
+     
+}
+a{
+     text-decoration: none;
+}
+body{
+    background-image: url(../multimedia/background-image.jpg);
+    font-family: 'Roboto', sans-serif;
+}
+img{
+     border-radius: 10px;
+}
+header{
+     padding: 30px;
+     text-align: center;
+     background-image: url(../multimedia/background-image.jpg);
+     background-repeat: cover;
+}
+header div{
+     background-color: #f1faee;
+     opacity: 0.7;
+     padding: 10px;
+     border-radius: 10px;
+     color: black;
+     font-size: 20px;
+}
+
+header h1{
+     font-size: 40px;
+     margin: 0 0 20px;
+}
+
+
+/*MEDIA QUERY*/
+
+@media screen and (max-width: 700px){
+     .menu, .row{
+          flex-direction: column;
+     }
+}
