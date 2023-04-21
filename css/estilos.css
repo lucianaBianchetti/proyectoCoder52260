@@ -7,7 +7,7 @@
 /*HEADER*/
 
 .logo{
-     max-width: 150px;
+    max-width: 150px;
     height: auto 
 }
 
@@ -20,6 +20,7 @@
      display: flex;
      justify-content: center;
      background-color: #F55E6B;
+   
 }
 
 .menu a{
@@ -30,23 +31,20 @@
 }
 
 /*MAIN*/
-
-.mainPic{
-     width: 800px;
-     height: auto;
-     display: block;
-    align-items: center; 
-    margin-top: 50px;    
-}
-
-.contenedor1{
+.row{
      display: flex;
-     flex-wrap: wrap;     
+     flex-wrap: wrap;
 }
 
 .main{
      flex: 70%;
-
+}
+.mainPic{
+     width: 800px;
+     height: auto;
+     display: block;
+     align-items: center; 
+     margin-top: 50px;    
 }
 .aside{
      flex: 30%;
@@ -54,9 +52,9 @@
      opacity: 0.8;
      padding: 20px;
      float: right;
-     width: 300px;
-     margin-top: 40px;
-     margin-bottom: 20px;
+     width: 300px; 
+     margin-top: 10px;
+     margin-bottom: 5px;
      border: solid 1px #457b9d;   
      box-shadow: 2px 2px 5px #457b9d;
      box-sizing: border-box; 
@@ -69,130 +67,225 @@
      background-color: #1d3557;
      text-align: center;
      padding: 5px;
+     font-weight: bold;
 }
 .widget{
      margin-bottom: 20px;
 }
 
+.widget ul{
+     list-style-type: disc;
+}
+
+.widget ul li{
+     margin: 15px 0px;
+}
+
+.soundtrack{
+     grid-area: soundtrack;
+}
+
+.redes{
+     width: 40px;
+}
+ /*IMAGENES NEWS*/
 .news{
      display: grid;
-     grid-template-columns: repeat(3, 400px);
-     grid-template-rows: repeat(2,350px);
-     gap: 20px;
+     grid-template-columns: repeat(5, 150px);
+     grid-template-rows: repeat(3, 200px);
+     gap: 5px 5px;
      grid-template-areas: 
-     "imagen1  imagen2  imagen3 "
-     "imagen4  imagen5  imagen6 ";
-     justify-content: space-around;
-     background-color: #1d3557;
-     padding: 20px;  
+     "imagen1 imagen1 imagen1 imagen1 imagen2"
+     "imagen3 imagen3 imagen6 imagen5 imagen5"
+     "imagen3 imagen3 imagen6 imagen4 imagen4";
+     justify-content: center;
+     padding: 5px;
+
+     
 }
 .imagen1{
      grid-area: imagen1;
-     background-image: url(../multimedia/johnwick4.png);
-     background-position: center;
+     background-image: url(../multimedia/guardians-of-the-galaxy-vol-3-jpg.jfif);
+     background-position:center;
 }
-
 .imagen2{
      grid-area: imagen2;
      background-image: url(../multimedia/creed3.jpg);
      background-position: center;
+     
 }
 .imagen3{
      grid-area: imagen3;
-     background-image: url(../multimedia/antman.jpg);
+     background-image: url(../multimedia/johnwick4.png);
      background-position: center;
+     background-position: top;
 }
 .imagen4{
      grid-area: imagen4;
-     background-image: url(../multimedia/Knights-of-the-Zodiac.jpg);
-     background-position: center;
+     background-image: url(../multimedia/everything-everywhere.jpg);
+     background-position: bottom;
+
 }
 .imagen5{
      grid-area: imagen5;
-     background-image: url(../multimedia/theflash.jpg);
+     background-image: url(../multimedia/oppenheimer-pic.png);
      background-position: center;
 }
 .imagen6{
      grid-area: imagen6;
-     background-image: url(../multimedia/shazam-2.jpg);
-     background-position: center;
+     background-image: url(../multimedia/Knights-of-the-Zodiac-seiya.jpg);
+     background-position: left;
+ 
 }
-.soundtrack{
-     grid-area: soundtrack;
-}
-.footer{
-     grid-area: footer;
-     display: block inline-block;
-}
+
 .bajadaPrincipal{
 color:#f1faee ;
 text-align: justify;
-background-color: #457b9d;
-height: 150px;
 padding: 10px;
-overflow: auto;
 }
 
 .button{
      font-weight: bold;
      color: #1d3557;
      background-color: #f1faee;
-     margin: 10px;
-     padding: 20px; 
+     margin: 5px;
+     padding: 10px; 
+     border-radius: 10px;
 }
 
 .movieTrailer{
      padding: 20px;
+     position: absolute;
+     margin-left: 5px;
+     margin-top: 10px;
 }
 
-.nosotrosTexto{
-    text-align: justify;
-    background-color: #457b9d;
-    color: #f1faee;
-    display: flex;
+/*PAGINATION*/
+
+.aria-lebel{
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+/*TRAILERS*/
+
+.trailers{
+     display: flex;
+     flex-wrap: wrap; 
+     flex-direction: row;
+     margin-left: 20px;  
+}
+
+.containerTrailer{
+     margin-left: 30px;
+}
+
+.trailers div{
+     margin: 5px;
+}
+/*CONTACTO*/
+
+.formulario{
+     display: flex;     
+     flex-direction: column;
+     background-color: #1d3557;
+     color: #f1faee;
+     width: 60%;
+     padding: 20px;
+     text-align: center;
+     border:1px solid #1d3557;
+     margin: 20px auto;
+     border-radius: 10px;
+     box-shadow: 0px 0px 10px #1d3557;
+    
+    
+}
+
+.contacto{
+    display: flex;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    justify-content: center;
+    
+}
+
+.cajas {
+display: flex;
+flex-direction: column;
+margin: 10px auto;
+}
+
+.cajas label{
+     padding: 10px;
+}
+
 
 /*NOSOTROS*/
 
-.nosotrosImagen{
+.nosotrosContainer{
+     display: flex;
+     flex-direction: row;
+     padding: 10px;
+     justify-content: justify;
+     box-sizing: border-box;
+     margin: 20px 10px;
+     
+}
 
-     padding: 0px;
+.nosotros h2{
+     text-align: center;
+     background-color: #f1faee;
+     color: black;
+     font-weight: bold;
+}
+.mainNosotros{
+     flex: 30%;
+     
+}
+
+.textoNosotros p{
+     flex:70% ;
+     padding: 10px;
+     text-align: justify;
+     font-size: 20px;
 }
 
 .equipo{
-      width: 200px;
-     display: inline;
-     padding: 10px;
-
+     display: flex;
 }
-
-.nosotrosTexto{
+.equipoTitulo h2{
      text-align: center;
+     background-color: #f1faee;
+     color: black;
+     font-weight: bold;  
 }
-
-
-/*CONTACTO*/
-
-.form{
-     background-color: #457b9d;
-     color: #f1faee;
+.equipo img{
+     width: 300px;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+     padding: 10px;
+     margin: 20px 10px;
 }
-
 
 /*GENERAL*/
 
 h2{
      text-align: left;
-     color: black; 
-     margin-top: 20px; 
+     color: white; 
+     margin-top: 20px;
+     font-weight: bold;     
+     opacity: 0.7;
+     padding: 10px;
+     border-radius: 10px;
      
 }
 a{
      text-decoration: none;
 }
 body{
-    background-image: url(../multimedia/background-image.jpg);
-    font-family: 'Roboto', sans-serif;
+  background-color: #1d3557;
+  color: #f1faee;
 }
 img{
      border-radius: 10px;
@@ -217,11 +310,31 @@ header h1{
      margin: 0 0 20px;
 }
 
+footer{
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     background-color: #457b9d;
+     color: white;
+     padding: 10px;
+}
 
+footer h5{
+     text-align: center;
+}
+footer p{
+     text-align: center;
+}
 /*MEDIA QUERY*/
 
-@media screen and (max-width: 700px){
-     .menu, .row{
+@media screen and (max-width: 768px){
+     .menu, .row, .main, .nosotrosContainer, .equipo {
+          flex-direction: column;
+     }
+}
+
+@media screen and (max-width: 500px){
+     .menu, .row, .main, .nosotrosContainer, .equipo {
           flex-direction: column;
      }
 }
