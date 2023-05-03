@@ -11,13 +11,11 @@
     height: auto 
 }
 
+
 .cabecera h1{
      font-size: 60px;
      
  }
-
- /*MENU*/
- 
 .menu{
      display: flex;
      justify-content: center;
@@ -329,7 +327,7 @@ footer p{
 }
 /*MEDIA QUERY*/
 
-/*@media screen and (max-width: 768px){
+@media screen and (max-width: 768px){
      .menu, .row, .main, .nosotrosContainer, .equipo {
           flex-direction: column;
      }

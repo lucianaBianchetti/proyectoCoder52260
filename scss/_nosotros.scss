@@ -1,0 +1,46 @@
+.nosotrosContainer{
+     display: flex;
+     flex-direction: row;
+     padding: 10px;
+     justify-content: justify;
+     box-sizing: border-box;
+     margin: 20px 10px;
+     
+}
+
+.nosotros h2{
+     text-align: center;
+     background-color: #f1faee;
+     color: black;
+     font-weight: bold;
+}
+.mainNosotros{
+     flex: 30%;
+     
+}
+
+.textoNosotros p{
+     flex:70% ;
+     padding: 10px;
+     text-align: justify;
+     font-size: 20px;
+}
+
+.equipo{
+     display: flex;
+     img{
+     width: 300px;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+     padding: 10px;
+     margin: 20px 10px;
+     }
+}
+.equipoTitulo h2{
+     text-align: center;
+     background-color: #f1faee;
+     color: black;
+     font-weight: bold;  
+}
+

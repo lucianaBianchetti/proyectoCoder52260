@@ -1,0 +1,28 @@
+/*CONTACTO*/
+
+.container-form{
+    display: flex;     
+    flex-direction: column;
+    background-color: $colorPrincipal;
+    justify-items: center;
+    color: $colorTerciario;
+    width: 60%;
+    padding: 20px;
+    text-align: center;
+    border:1px solid #1d3557;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #1d3557;
+}
+
+.contacto{
+    display: flex;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    justify-content: center;
+    
+}
+
+
+
