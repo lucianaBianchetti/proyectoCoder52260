@@ -134,6 +134,10 @@ header .cabecera h1 {
   height: auto;
   margin-top: 5px;
   margin-right: 10px;
+  transition: all 2s;
+}
+.row-news img:hover {
+  transform: scale(2, 2);
 }
 
 .row-news {
@@ -177,6 +181,7 @@ header .cabecera h1 {
 /*TRAILERS*/
 .trailers {
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
   flex-direction: row;
   margin-left: 20px;
@@ -222,6 +227,11 @@ footer p {
 
 .mainNosotros {
   flex: 30%;
+}
+
+.mainNosotros img {
+  margin-top: 50px;
+  margin-right: 10px;
 }
 
 .textoNosotros p {
@@ -272,6 +282,57 @@ footer p {
   color: white;
   font-weight: bold;
   justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .menu, .row, .main, .nosotrosContainer, .equipo {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 500px) {
+  .menu, .row, .main, .nosotrosContainer, .equipo {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 500px) {
+  .equipo img {
+    width: 100%;
+    justify-content: center;
+  }
+  .mainNosotros {
+    flex: 100%;
+  }
+  .textoNosotros p {
+    flex: 100%;
+  }
+  .textoNosotros p .mainNosotros img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .main, .aside {
+    flex-direction: column;
+    flex: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .row-news {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 500px) {
+  .row-news img {
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 500px) {
+  .trailers {
+    flex-direction: column;
+  }
+  .trailers iframe {
+    width: fit-content;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

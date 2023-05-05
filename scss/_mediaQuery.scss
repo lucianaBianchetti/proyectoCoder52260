@@ -9,8 +9,26 @@
           flex-direction: column
      }
 }
+
+@media screen and (max-width: 500px){
+     .equipo img{
+          width: 100%;
+          justify-content: center;
+     }
+     .mainNosotros{
+          flex: 100%;
+     }
+     .textoNosotros p{
+          flex:100% ;
+     .mainNosotros img{
+          width: 100%,
+     }
+}
+}
+
 @media screen and (max-width: 500px){
      .main, .aside {
+          flex-direction: column;
           flex: 100%
      }
 }
@@ -24,5 +42,14 @@
      .row-news img{
      width:100%;
      height: auto;
+     }
+}
+
+@media screen and (max-width: 500px){
+     .trailers{
+     flex-direction: column; 
+     }
+     .trailers iframe{
+          width: fit-content;
      }
 }
