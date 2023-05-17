@@ -127,6 +127,9 @@ header .cabecera h1 {
 .custom-navbar ul {
   list-style: none;
 }
+.custom-navbar .nav-item {
+  padding-inline: 50px;
+}
 
 /*IMAGENES NEWS*/
 .row-news img {
@@ -251,9 +254,25 @@ footer p {
   justify-content: space-evenly;
   padding: 10px;
   margin: 20px 10px;
+  border-radius: 10%;
 }
-
-.equipoTitulo h2 {
+.equipo p {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.equipo article {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 10px;
+  padding: 10px;
+}
+.equipo .equipoNombres {
+  display: flex;
+}
+.equipo .equipoTitulo {
   text-align: center;
   background-color: #f1faee;
   color: black;
@@ -289,14 +308,10 @@ footer p {
     flex-direction: column;
   }
 }
-@media screen and (max-width: 500px) {
-  .menu, .row, .main, .nosotrosContainer, .equipo {
-    flex-direction: column;
-  }
-}
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
   .equipo img {
-    width: 100%;
+    width: 80%;
+    flex-direction: column;
     justify-content: center;
   }
   .mainNosotros {
@@ -305,8 +320,18 @@ footer p {
   .textoNosotros p {
     flex: 100%;
   }
-  .textoNosotros p .mainNosotros img {
+  .mainNosotros img {
     width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .mainPic {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .menu, .row, .main, .nosotrosContainer, .equipo {
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 500px) {
